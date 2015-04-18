@@ -1,0 +1,46 @@
+{
+  "name": "siv",
+  "version": "1.0.0-alpha.1",
+  "description": "",
+  "keywords": [],
+  "homepage": "http://github.com/snd/siv",
+  "author": {
+    "name": "Maximilian Krüger",
+    "email": "kruemaxi@gmail.com",
+    "url": "http://github.com/snd"
+  },
+  "contributors": [],
+  "bugs": {
+    "url": "http://github.com/snd/siv/issues",
+    "email": "kruemaxi@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/snd/siv.git"
+  },
+  "licenses": {
+    "type": "MIT",
+    "url": "git://github.com/snd/siv/LICENSE"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "dependencies": {
+    "chrono-node": "1.0.4",
+    "lodash": "3.6.0"
+  },
+  "devDependencies": {
+    "nodeunit": "0.9.1",
+    "coffee-script": "1.9.1",
+    "mesa": "1.0.0-alpha.11",
+    "moment": "2.10.2",
+    "qs": "2.4.1"
+  },
+  "main": "lib/siv",
+  "scripts": {
+    "compile": "node_modules/coffee-script/bin/coffee --bare --compile --output lib src",
+    "prepublish": "npm run compile",
+    "pretest": "npm run compile",
+    "test": "node_modules/nodeunit/bin/nodeunit test/*.coffee"
+  }
+}
