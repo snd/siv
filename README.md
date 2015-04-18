@@ -65,7 +65,7 @@ let's say we have a querystring:
 
 now we can use [siv](https://github.com/snd/siv) to apply the query to a
 [mesa](https://github.com/snd/mesa)
-(or mohair [mohair](https://github.com/snd/mohair))
+(or [mohair](https://github.com/snd/mohair))
 query object:
 
 ``` javascript
