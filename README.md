@@ -8,7 +8,8 @@
 
 **siv is a simple library that makes it very easy for a restful-API to expose an entirely safe but very powerful subset of SQL's functionality through querystrings.**
 
-siv will also contain library-agnostic client-side utilities that allow you to build nice filter/query menus that produce querystrings that the
+siv will also contain library-agnostic client-side utilities that allow
+you to build nice filter/query menus that produce querystrings the
 API can consume.
 
 **this is in early alpha.** work in progress. in rough shape.
@@ -66,7 +67,7 @@ let's say we have a querystring:
 now we can use [siv](https://github.com/snd/siv) to apply the query to a
 [mesa](https://github.com/snd/mesa)
 (or [mohair](https://github.com/snd/mohair))
-query object:
+object:
 
 ``` javascript
 > var mesa = require('mesa');
@@ -176,6 +177,8 @@ client side representation is not 100% server side spec !!!
 in other words
 
 siv manipulates mesa queries based on the output of qs.
+
+perfect for those table views you have in your admin panel.
 
 100% sql injection safe.
 
