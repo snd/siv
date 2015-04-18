@@ -109,9 +109,9 @@ for now [see the tests](test/siv.coffee) instead.**
 
 - [x] simple: immutable data, functional, side-effect free
 - [x] well tested
-- [x] helpful error messages that can be returned to the API consumer
+- [x] helpful error messages that can be returned directly to the API consumer
 - [x] chainable API
-- [x] fuzzy natural language datetime and datetime range parsing
+- [ ] fuzzy natural language datetime and datetime range parsing
 - [x] pagination
   - [x] limit
   - [x] offset
