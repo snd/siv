@@ -103,6 +103,15 @@ OFFSET ?
 > sieved.params();
 [true, 'gmail.com', 'fake', 100, 200, 1000, 10, 20]
 ```
+
+to find exactly the data requested in the querystring do:
+
+``` javascript
+> sieved.find().then(function(users) {
+  console.log(users);
+});
+```
+
 **more documentation (especially on error handling) is missing.
 for now [see the tests](test/siv.coffee) instead.**
 
