@@ -16,9 +16,16 @@ API can consume.
 api is unstable. going to change a lot.
 use at your own risk...
 
+API consumers can make very flexible queries without much work on your side.
+like table views
+
 ### example
 
-let's say we have a querystring:
+let's say we want to find 10 users
+
+
+
+have a querystring:
 
 ``` javascript
 > var querystring = [
@@ -104,7 +111,8 @@ OFFSET ?
 [true, 'gmail.com', 'fake', 100, 200, 1000, 10, 20]
 ```
 
-to find exactly the data requested in the querystring do:
+to find exactly the data requested in the querystring do
+what you are used to from [mesa](https://github.com/snd/mesa):
 
 ``` javascript
 > sieved.find().then(function(users) {
